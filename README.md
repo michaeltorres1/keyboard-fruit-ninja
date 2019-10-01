@@ -32,7 +32,8 @@ This game is inspired by [Fruit Ninja](https://fruitninja.com/)
 - audio.js
 
 ### MVPs
-- Basic visuals and an interactive interface
+- host live project on Github Pages
+- basic visuals and an interactive interface
 - player can type a letter to perform an action
 - obstacles generate coming from the bottom of the screen and fall back down
 - obstacles cause game over if not sliced or if bomb is sliced
