@@ -26,7 +26,10 @@ This game is inspired by [Fruit Ninja](https://fruitninja.com/)
 - React.js for basic structure and functionality
 
 ### Main files
-- to be decided on...
+- board.js
+- fruits.js
+- bombs.js
+- audio.js
 
 ### MVPs
 - Basic visuals and an interactive interface
