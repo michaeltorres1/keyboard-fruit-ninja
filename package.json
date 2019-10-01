@@ -4,7 +4,8 @@
   "description": "## Overview Keyboard Fruit Ninja is a simple and easy game to pick up quickly. The extent of the gameplay is pressing keys as the fruits show up to slice them, while trying to avoid bombs that shouldn't be sliced. If any fruit is missed a life is lossed and after 3 losses the game is over. If a bomb is sliced the game is over automatically.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch --mode=development"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,15 @@
   "devDependencies": {
     "webpack": "^4.41.0",
     "webpack-cli": "^3.3.9"
+  },
+  "dependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "lodash": "^4.17.15",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0"
   }
 }
