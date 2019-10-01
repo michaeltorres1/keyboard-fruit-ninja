@@ -165,6 +165,17 @@ eval("var content = __webpack_require__(/*! !../../../node_modules/css-loader/di
 
 /***/ }),
 
+/***/ "./src/classes/landing.js":
+/*!********************************!*\
+  !*** ./src/classes/landing.js ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("var canvas = document.getElementById('canvas');\nvar c = canvas.getContext('2d');\nc.fillStyle = \"red\";\nc.fillRect(100, 100, 400, 300);\n\n//# sourceURL=webpack:///./src/classes/landing.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -173,7 +184,7 @@ eval("var content = __webpack_require__(/*! !../../../node_modules/css-loader/di
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _assets_stylesheets_test_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/stylesheets/test.scss */ \"./src/assets/stylesheets/test.scss\");\n/* harmony import */ var _assets_stylesheets_test_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_stylesheets_test_scss__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nfunction component() {\n  var element = document.createElement('div');\n  element.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default.a.join(['Hello', 'webpack'], ' ');\n  return element;\n}\n\ndocument.body.appendChild(component());\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _classes_landing__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./classes/landing */ \"./src/classes/landing.js\");\n/* harmony import */ var _classes_landing__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_classes_landing__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _assets_stylesheets_test_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/stylesheets/test.scss */ \"./src/assets/stylesheets/test.scss\");\n/* harmony import */ var _assets_stylesheets_test_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_stylesheets_test_scss__WEBPACK_IMPORTED_MODULE_2__);\n\n // TODO: test style sheet is just for testing\n\n\n\nfunction component() {\n  var element = document.createElement('div');\n  element.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default.a.join(['Hello', 'webpack'], ' ');\n  return element;\n}\n\ndocument.body.appendChild(component());\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
