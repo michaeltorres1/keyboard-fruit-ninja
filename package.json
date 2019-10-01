@@ -1,0 +1,24 @@
+{
+  "name": "keyboard-fruit-ninja",
+  "version": "1.0.0",
+  "description": "## Overview Keyboard Fruit Ninja is a simple and easy game to pick up quickly. The extent of the gameplay is pressing keys as the fruits show up to slice them, while trying to avoid bombs that shouldn't be sliced. If any fruit is missed a life is lossed and after 3 losses the game is over. If a bomb is sliced the game is over automatically.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaeltorres1/keyboard-fruit-ninja.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaeltorres1/keyboard-fruit-ninja/issues"
+  },
+  "homepage": "https://github.com/michaeltorres1/keyboard-fruit-ninja#readme",
+  "devDependencies": {
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
+  }
+}
