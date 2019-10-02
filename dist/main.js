@@ -86,14 +86,14 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/stylesheets/test.scss":
-/*!***********************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/stylesheets/test.scss ***!
-  \***********************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/stylesheets/canvas.scss":
+/*!*************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/stylesheets/canvas.scss ***!
+  \*************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"#hello {\\n  width: 50%;\\n  height: 50%;\\n  background: black; }\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/assets/stylesheets/test.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"* {\\n  padding: 0;\\n  margin: 0; }\\n\\ncanvas {\\n  background: #eee;\\n  display: block;\\n  margin: 0 auto; }\\n\\n#canvas {\\n  width: 480;\\n  height: 320; }\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/assets/stylesheets/canvas.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -154,14 +154,14 @@ eval("module.exports = function(module) {\n\tif (!module.webpackPolyfill) {\n\t\
 
 /***/ }),
 
-/***/ "./src/assets/stylesheets/test.scss":
-/*!******************************************!*\
-  !*** ./src/assets/stylesheets/test.scss ***!
-  \******************************************/
+/***/ "./src/assets/stylesheets/canvas.scss":
+/*!********************************************!*\
+  !*** ./src/assets/stylesheets/canvas.scss ***!
+  \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./test.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/stylesheets/test.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/assets/stylesheets/test.scss?");
+eval("var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./canvas.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/stylesheets/canvas.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/assets/stylesheets/canvas.scss?");
 
 /***/ }),
 
@@ -172,7 +172,7 @@ eval("var content = __webpack_require__(/*! !../../../node_modules/css-loader/di
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("var canvas = document.getElementById('canvas');\nvar c = canvas.getContext('2d');\nc.fillStyle = \"red\";\nc.fillRect(100, 100, 400, 300);\n\n//# sourceURL=webpack:///./src/classes/landing.js?");
+eval("// let canvas = document.getElementById('canvas');\n// let c = canvas.getContext('2d');\n// c.fillStyle = \"red\";\n// c.fillRect(100, 100, 400, 300);\n\n//# sourceURL=webpack:///./src/classes/landing.js?");
 
 /***/ }),
 
@@ -184,7 +184,7 @@ eval("var canvas = document.getElementById('canvas');\nvar c = canvas.getContext
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _classes_landing__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./classes/landing */ \"./src/classes/landing.js\");\n/* harmony import */ var _classes_landing__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_classes_landing__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _assets_stylesheets_test_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/stylesheets/test.scss */ \"./src/assets/stylesheets/test.scss\");\n/* harmony import */ var _assets_stylesheets_test_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_stylesheets_test_scss__WEBPACK_IMPORTED_MODULE_2__);\n\n // TODO: test style sheet is just for testing\n\n\n\nfunction component() {\n  var element = document.createElement('div');\n  element.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default.a.join(['Hello', 'webpack'], ' ');\n  return element;\n}\n\ndocument.body.appendChild(component());\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _classes_landing__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./classes/landing */ \"./src/classes/landing.js\");\n/* harmony import */ var _classes_landing__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_classes_landing__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _assets_stylesheets_canvas_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/stylesheets/canvas.scss */ \"./src/assets/stylesheets/canvas.scss\");\n/* harmony import */ var _assets_stylesheets_canvas_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_stylesheets_canvas_scss__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\nfunction component() {\n  var element = document.createElement('div');\n  return element;\n}\n\ndocument.body.appendChild(component());\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
