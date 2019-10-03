@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"* {\\n  padding: 0;\\n  margin: 0; }\\n\\ncanvas {\\n  background: #eee;\\n  display: block;\\n  margin: 0 auto; }\\n\\n#canvas {\\n  width: 480;\\n  height: 320; }\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/assets/stylesheets/canvas.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"* {\\n  padding: 0;\\n  margin: 0; }\\n\\ncanvas {\\n  background: #eee;\\n  display: block;\\n  margin: 0 auto; }\\n\\n#canvas {\\n  width: 100%;\\n  height: 100%; }\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/assets/stylesheets/canvas.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
