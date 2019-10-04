@@ -1,10 +1,10 @@
-import _ from 'lodash';
-// import landing from './classes/landing';
-// import canvas from './assets/stylesheets/canvas.scss';
+import Game from './classes/Game';
 
-function component () {
-  const element = document.createElement('div');
-  return element;
-}
+let canvas = document.getElementById('canvas');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+let ctx = canvas.getContext('2d');
 
-document.body.appendChild(component());
+let newGame = new Game(ctx);
+newGame.generateFruits();
+newGame.animate();
