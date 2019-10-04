@@ -5,6 +5,8 @@ class Fruit {
     this.ctx = ctx;
     this.dx = this.randomX(x);
     this.dy = -4;
+    this.letter = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 1);
+    this.sliced = false;
     this.visibility = true;
   }
 
@@ -13,6 +15,13 @@ class Fruit {
     this.ctx.arc(this.x, this.y, 30, 0, Math.PI * 2, false);
     this.ctx.fillStyle = "#0095DD";
     this.ctx.fill();
+    this.ctx.beginPath();
+    this.ctx.font = "40px Arial";
+    this.ctx.fillStyle = "red";
+    this.ctx.textAlign = "center";
+    this.ctx.fillText(this.letter, this.x, this.y + 15);
+    this.ctx.fill();
+
   }
 
   update() {
