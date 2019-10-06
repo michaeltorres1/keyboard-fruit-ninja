@@ -26,7 +26,7 @@ class Game {
   animate() {
     // clear the canvas
     this.ctx.clearRect(0, 0, innerWidth, innerHeight);
-
+  
     for (let i = 0; i < this.fruits.length; i++) {
       // if fruit is dropped off canvas then reinitialize fruit with new fruit
       if (this.fruits[i].visibility === false) {
@@ -36,10 +36,25 @@ class Game {
         this.fruits[i] = new Fruit(x, y, this.ctx);
       }
 
+      document.addEventListener('keypress', logKey);
+
+      let that = this.fruits;
+      function logKey(e) {
+        for (let i = 0; i < that.length; i++) {
+          if (that[i]["letter"] === e.key) {
+            that.splice(i, 1);
+            that.fruits[i].update();
+            that.fruits[i].draw();
+          }
+        }
+      }
+
+
+
       this.fruits[i].update();
       this.fruits[i].draw();
     }
-
+    
     requestAnimationFrame(this.animate);
   }
 }

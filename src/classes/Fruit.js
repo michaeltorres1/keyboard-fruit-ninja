@@ -8,6 +8,7 @@ class Fruit {
     this.letter = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 1);
     this.sliced = false;
     this.visibility = true;
+    this.keyPressed = false;
   }
 
   draw() {
@@ -21,7 +22,6 @@ class Fruit {
     this.ctx.textAlign = "center";
     this.ctx.fillText(this.letter, this.x, this.y + 15);
     this.ctx.fill();
-
   }
 
   update() {
