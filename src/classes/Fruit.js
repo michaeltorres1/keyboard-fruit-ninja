@@ -1,5 +1,5 @@
 class Fruit {
-  constructor(x, y, ctx) {
+  constructor(x, y, ctx, level) {
     this.x = x;
     this.y = y;
     this.ctx = ctx;
@@ -9,6 +9,11 @@ class Fruit {
     this.sliced = false;
     this.visibility = true;
     this.keyPressed = false;
+    if (level === undefined) {
+      this.level = "1";
+    } else {
+      this.level = level;
+    }
   }
 
   draw() {
@@ -18,9 +23,14 @@ class Fruit {
     this.ctx.fill();
     this.ctx.beginPath();
     this.ctx.font = "40px Arial";
-    this.ctx.fillStyle = "red";
+    this.ctx.fillStyle = "black";
     this.ctx.textAlign = "center";
     this.ctx.fillText(this.letter, this.x, this.y + 15);
+    this.ctx.fill();
+    this.ctx.beginPath();
+    this.ctx.font = "40px Arial";
+    this.ctx.fillStyle = "red";
+    this.ctx.fillText(this.level, 50, 50);
     this.ctx.fill();
   }
 
