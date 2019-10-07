@@ -30,7 +30,12 @@ class Fruit {
   
     // begin gravitation force 
     if (this.y < randomY) {
-      this.dy += 0.5863;
+      if ((this.x < this.ctx.canvas.width && this.x > this.ctx.canvas.width - 100) || 
+        (this.x > this.ctx.canvas.width && this.x < this.ctx.canvas.width + 100)) {
+        this.dy += 0.6863;
+      } else {
+        this.dy += 0.5863;
+      }
     }
   
     // set visibility to false if ball dropped off canvas
@@ -47,7 +52,7 @@ class Fruit {
     if (this.x > (this.ctx.canvas.width / 2)) {
       return Math.random() * (0 - 3) + 0;
     } else {
-      return Math.random() * (3 - (0)) + 1;
+      return Math.random() * (3 - (0)) + 0;
     }
   }
 }
