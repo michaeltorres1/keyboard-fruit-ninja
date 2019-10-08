@@ -3,14 +3,14 @@ html {
   background: #64391E;
 }
 
-.landing {
+.instructions {
   position: relative;
   background-image: url("../images/kbfn.jpg");
   height: 100vh;
 }
 
-.landing-inner {
-  color: #fff;
+.instructions-inner {
+  color: greenyellow;
   height: 100%;
   width: 80%;
   margin: auto;
@@ -51,30 +51,6 @@ nav {
   color: black;
 }
 
-.my-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #64391E;
-  width: 50vh;
-  height: 30vh;
-  border-radius: 20px;
-}
-
-.play-game, .instructions {
-  display: inline-block;
-  border: none;
-  font-weight: bold;
-  color: black;
-  font-size: 2vh;
-  background: #e6ee9c;
-  width: 30vh;
-  padding: 2vh;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  border-radius: 8px;
-}
-
 a {
   color: white;
   text-decoration: none;
@@ -92,4 +68,35 @@ ul {
 .dividers {
   margin-left: 150px;
   margin-right: 150px;
+}
+
+.instructions-inner > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #64391E;
+  color: #e6ee9c;
+  border-radius: 20px;
+  width: 50vh;
+  height: 30vh;
+}
+
+.instruction-form-links {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.play-game, .home {
+  display: inline-block;
+  border: none;
+  font-weight: bold;
+  color: black;
+  font-size: 2vh;
+  background: #e6ee9c;
+  width: 30vh;
+  padding: 2vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  border-radius: 8px;
 }
