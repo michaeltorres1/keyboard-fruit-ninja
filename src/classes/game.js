@@ -90,7 +90,7 @@ class Game {
     let y = canvas.height;
 
     thatLevel += 1;
-    for (let i = 0; i < 7; i++) {
+    for (let i = 0; i < thatLevel; i++) {
       that.push(new Fruit(x, y, ctx, thatLevel));
     }
 
@@ -100,7 +100,7 @@ class Game {
   updateAndDraw(i) {
     if (this.fruits[i] !== undefined) {
       this.fruits[i].update();
-      this.fruits[i].draw();
+      this.fruits[i].img.onload = this.fruits[i].draw();
     }
   }
 

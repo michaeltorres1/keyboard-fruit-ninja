@@ -1,5 +1,7 @@
 class Fruit {
   constructor(x, y, ctx, level) {
+    let fruitImgs = ['cherry', 'greenApple', 'pineapple', 'strawberry', 'watermelon'];
+    let randomFruitIdx = Math.floor(Math.random() * Math.floor(5));
     this.x = x;
     this.y = y;
     this.ctx = ctx;
@@ -9,6 +11,9 @@ class Fruit {
     this.sliced = false;
     this.visibility = true;
     this.keyPressed = false;
+    this.img = new Image(60, 45);
+    this.img.src = fruitImgs[randomFruitIdx] + '.png';
+
     if (level === undefined) {
       this.level = "1";
     } else {
@@ -17,15 +22,12 @@ class Fruit {
   }
 
   draw() {
-    this.ctx.beginPath();
-    this.ctx.arc(this.x, this.y, 30, 0, Math.PI * 2, false);
-    this.ctx.fillStyle = "#0095DD";
-    this.ctx.fill();
+    this.ctx.drawImage(this.img, this.x, this.y, 100, 100);
     this.ctx.beginPath();
     this.ctx.font = "40px Arial";
-    this.ctx.fillStyle = "black";
+    this.ctx.fillStyle = "white";
     this.ctx.textAlign = "center";
-    this.ctx.fillText(this.letter, this.x, this.y + 15);
+    this.ctx.fillText(this.letter, this.x + 50, this.y + 70);
     this.ctx.fill();
     this.ctx.beginPath();
     this.ctx.font = "40px Arial";
