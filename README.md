@@ -1,5 +1,7 @@
 # Keyboard Fruit Ninja
 
+Live on [Keyboard Fruit Ninja](https://michaeltorres1.github.io/keyboard-fruit-ninja/dist/landing.html)
+
 ## Overview
 Keyboard Fruit Ninja is a simple and easy game to pick up quickly. The extent of the gameplay is pressing keys as the fruits show up to slice them, while trying to avoid bombs that shouldn't be sliced. If any fruit is missed a life is lossed and after 3 losses the game is over. If a bomb is sliced the game is over automatically.
 
@@ -30,11 +32,3 @@ This game is inspired by [Fruit Ninja](https://fruitninja.com/)
 - fruits.js
 - bombs.js
 - audio.js
-
-### MVPs
-- host live project on Github Pages
-- basic visuals and an interactive interface
-- player can type a letter to perform an action
-- obstacles generate coming from the bottom of the screen and fall back down
-- obstacles cause game over if not sliced or if bomb is sliced
-- window styling scoreboard modal
