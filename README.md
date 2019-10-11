@@ -28,9 +28,8 @@ This game is inspired by [Fruit Ninja](https://fruitninja.com/)
 - upon pressing the play button, it will take you to the showpage and a countdown will begin (3...2...1) and the game will start. A few fruits and bombs will spawn and quickly grow in numbers.
 
 ### Screenshots
+## Landing
 <img src="./src/assets/images/landingPage.png">
-
-## Landing page
 
 ## Game page
 
