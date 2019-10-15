@@ -14,6 +14,14 @@ canvas {
   margin: 0 auto;
 }
 
+#thatCanvas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  opacity: .8;
+}
+
 #canvas {
   width: 80%;
   height: 80%;
@@ -68,4 +76,32 @@ ul {
 .dividers {
   margin-left: 150px;
   margin-right: 150px;
+}
+
+#gameOver {
+  justify-content: center;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+  position: absolute;
+  font-size: 50px;
+  opacity: 1;
+  width: 270px;
+  color: whitesmoke;
+}
+
+#gameOver > a {
+  display: inline-block;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  font-size: 3vh;
+  background: #e6ee9c;
+  width: 35vh;
+  padding: 2vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  border-radius: 8px;
 }

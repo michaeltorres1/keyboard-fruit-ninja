@@ -10,6 +10,8 @@ class Game {
 
   // logic for animation
   animate() {
+    let x = requestAnimationFrame(this.animate);
+
     // clear the canvas
     this.ctx.clearRect(0, 0, innerWidth, innerHeight);
   
@@ -19,16 +21,22 @@ class Game {
       // reset this.fruits with this.nextFruits
       this.resetWithNextFruits();
 
-      document.addEventListener('keypress', logKey);
       let that = this.fruits;
+      let thatX = x;
       let thatFunc = this.generateMoreFruit;
-      let myCtx = this.ctx;
       let thatLevel = "";
+      let myCtx = this.ctx;
 
-      function logKey(e) {        
+      document.addEventListener('keypress', (e) => {
         for (let i = 0; i < that.length; i++) {
           if (that[i]["letter"] === e.key) {
-            that.splice(i, 1);
+            if (that[i]["typeOfFruit"] === 'bomb') {
+              cancelAnimationFrame(thatX);
+              myCtx.clearRect(0, 0, innerWidth, innerHeight);
+              document.getElementById('gameOver').style.display = "block";
+            } else {
+              that.splice(i, 1);
+            }
           }
         }
 
@@ -36,17 +44,15 @@ class Game {
           if (thatLevel === "") {
             thatLevel = 0;
           }
-          
+
           thatLevel += 1;
           that = thatFunc(that, myCtx, thatLevel);
         }
-      }
+      });
       
       // update and draw if defined
       this.updateAndDraw(i);
     }
-    
-    let x = requestAnimationFrame(this.animate);
   }
 
   reinitializeNewFruit() {

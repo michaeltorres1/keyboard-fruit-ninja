@@ -1,7 +1,7 @@
 class Fruit {
   constructor(x, y, ctx, level) {
-    let fruitImgs = ['cherry', 'greenApple', 'pineapple', 'strawberry', 'watermelon'];
-    let randomFruitIdx = Math.floor(Math.random() * Math.floor(5));
+    let fruitImgs = ['cherry', 'greenApple', 'pineapple', 'strawberry', 'watermelon', 'bomb'];
+    let randomFruitIdx = Math.floor(Math.random() * Math.floor(6));
     this.x = x;
     this.y = y;
     this.ctx = ctx;
@@ -11,6 +11,7 @@ class Fruit {
     this.sliced = false;
     this.visibility = true;
     this.keyPressed = false;
+    this.typeOfFruit = fruitImgs[randomFruitIdx];
     this.img = new Image(60, 45);
     this.img.src = fruitImgs[randomFruitIdx] + '.png';
 
