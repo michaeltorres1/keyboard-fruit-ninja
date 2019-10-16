@@ -16,10 +16,22 @@ html {
   width: 80%;
   margin: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.target {
+  max-width: 400px !important;
+  display: flex;
+  margin-right: 20px;
+  flex-direction: column;
+  border: none;
+}
+
+.target > p {
+  max-width: 300px;
 }
 
 h1 {
