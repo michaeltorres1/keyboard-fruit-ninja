@@ -6,8 +6,8 @@ class Fruit {
     this.y = y;
     this.ctx = ctx;
     this.dx = this.randomX(x);
-    this.dy = -4;
-    this.letter = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 1);
+    // this.dy = -10;
+    this.letter = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 1).toUpperCase();
     this.sliced = false;
     this.visibility = true;
     this.keyPressed = false;
@@ -17,15 +17,18 @@ class Fruit {
 
     if (level === undefined) {
       this.level = "1";
+      this.dy = -8;
     } else {
       this.level = level;
+      this.dy = -4;
+      this.dy -= this.level;
     }
   }
 
   draw() {
     this.ctx.drawImage(this.img, this.x, this.y, 100, 100);
     this.ctx.beginPath();
-    this.ctx.font = "40px Arial";
+    this.ctx.font = "40px 'Black Ops One', cursive";
     this.ctx.fillStyle = "white";
     this.ctx.textAlign = "center";
     this.ctx.fillText(this.letter, this.x + 50, this.y + 70);
@@ -41,13 +44,13 @@ class Fruit {
     // random position for y coordinate
     let randomY = Math.random() * ((150 - 0) + 0);
   
-    // begin gravitation force 
+    // begin gravitation force
     if (this.y < randomY) {
       if ((this.x < this.ctx.canvas.width && this.x > this.ctx.canvas.width - 100) || 
         (this.x > this.ctx.canvas.width && this.x < this.ctx.canvas.width + 100)) {
-        this.dy += 0.6863;
+        this.dy += 10.6863;
       } else {
-        this.dy += 0.5863;
+        this.dy += 10.5863;
       }
     }
   

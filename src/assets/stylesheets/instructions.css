@@ -1,6 +1,7 @@
 html {
   height: 100vh;
   background: #64391E;
+  font-family: 'Acme', sans-serif;
 }
 
 .instructions {
