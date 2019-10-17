@@ -1,115 +1,61 @@
-html {
-  height: 100vh;
-  background: #64391E;
-  font-family: 'Acme', sans-serif;
-}
-
-.instructions {
-  position: relative;
-  background-image: url("../images/kbfn.jpg");
-  height: 100vh;
-}
-
-.instructions-inner {
-  color: greenyellow;
-  height: 100%;
-  width: 80%;
-  margin: auto;
+.my-form-instructions {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.target {
-  max-width: 400px !important;
-  display: flex;
-  margin-right: 20px;
-  flex-direction: column;
-  border: none;
-}
-
-.target > p {
-  max-width: 300px;
-}
-
-h1 {
-  font-size: 50px;
-  color: greenyellow;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 0.7rem 2rem;
-  position: fixed;
-  z-index: 1;
-  width: 100%;
-  top: 0;
-}
-
-.profile-links:hover {
-  background: #e6ee9c;
-  border-radius: 8px;
-  padding: 1vh;
-  color: black;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 3vh;
-}
-
-ul {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  list-style: none;
-}
-
-.dividers {
-  margin-left: 150px;
-  margin-right: 150px;
-}
-
-.instructions-inner > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #64391E;
-  color: #e6ee9c;
-  border-radius: 20px;
   width: 50vh;
   height: 30vh;
+  position: absolute;
 }
 
-.instruction-form-links {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.play-game, .home {
-  display: inline-block;
+.my-form-instructions-para {
+  font-size: 20px;
   border: none;
   font-weight: bold;
-  color: black;
-  font-size: 2vh;
-  background: #e6ee9c;
-  width: 30vh;
+  color: greenyellow;
+  background: #1C2331;
+  width: 75vh;
   padding: 2vh;
   margin-top: 2vh;
   margin-bottom: 2vh;
   border-radius: 8px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: 0px -1px 0px rgba(0,0,0,.5);
+  -webkit-box-shadow: 0px 6px 0px black, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+  -moz-box-shadow: 0px 6px 0px black, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+  box-shadow: 0px 6px 0px black, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+}
+
+.list-of-instructions {
+  text-align: -webkit-left;
+}
+
+hr {
+  border-color: black;
+}
+
+.home {
+  margin-left: 20px;
+  font-size: 40px;
+}
+
+.home {
+  display: inline-block;
+  border: none;
+  font-weight: bold;
+  color: greenyellow;
+  background: #1C2331;
+  width: 40vh;
+  padding: 2vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  border-radius: 8px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: 0px -1px 0px rgba(0,0,0,.5);
+  -webkit-box-shadow: 0px 6px 0px black, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+  -moz-box-shadow: 0px 6px 0px black, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+  box-shadow: 0px 6px 0px black, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
 }
