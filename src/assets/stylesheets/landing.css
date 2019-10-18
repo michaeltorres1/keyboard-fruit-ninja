@@ -127,6 +127,10 @@ nav {
   flex-direction: row;
 }
 
+.instructions {
+  width: 32vh;
+}
+
 .play-game:active {
   background-image: linear-gradient(bottom, #bcaaa4 0%, #bcaaa4 100%);
   background-image: -o-linear-gradient(bottom, #bcaaa4 0%, #bcaaa4 100%);
