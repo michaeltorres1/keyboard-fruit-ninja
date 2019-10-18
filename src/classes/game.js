@@ -121,6 +121,10 @@ class Game {
     }
   }
 
+  // mouseDown() {
+  //   document.getElementById("player").play();
+  // }
+
   updateAndDraw(i) {
     if (this.fruits[i] !== undefined) {
       this.fruits[i].update();
