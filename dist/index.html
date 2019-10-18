@@ -7,11 +7,13 @@
   <title>Keyboard Fruit Ninja</title>
   <link href="https://fonts.googleapis.com/css?family=Acme|Black+Ops+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../src/assets/stylesheets/landing.css">
+  <link rel="stylesheet" href="../src/assets/stylesheets/instructions.css">
   <link rel="stylesheet" href="../src/assets/stylesheets/canvas.css">
   <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
+  <script src="https://kit.fontawesome.com/37268d7f87.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <section>
@@ -25,7 +27,6 @@
         <a href="https://angel.co/michael-torres-21" target="_blank" class="profile-links">AngelList</a>
       </ul>
     </nav>
-    
     <div id="thatCanvas">
       <canvas id="canvas"></canvas>
       <div id="gameOver">
@@ -33,9 +34,23 @@
         <a href="./index.html">Play Again</a>
         <a href="./landing.html">Back Home</a>
       </div>
+      <div class="sidetab-controls">
+        <audio id="player" src="kbfn_theme_song.mp3"></audio>
+        <button onclick="playSound()" class="play-sound"><i class="fa fa-volume-up fa-5x"></i></button>
+        <button onclick="pauseSound()" class="mute-sound"><i class="fa fa-volume-mute fa-5x"></i></button>  
+      </div>
     </div>
   </section>
-  
+
   <script src="main.js"></script>
+  <script>
+    function playSound() {
+      document.getElementById('player').play();
+    }
+
+    function pauseSound() {
+      document.getElementById('player').pause();
+    }
+  </script>
 </body>
 </html>
