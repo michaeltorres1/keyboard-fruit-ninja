@@ -6,7 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Keyboard Fruit Ninja</title>
   <link href="https://fonts.googleapis.com/css?family=Acme|Black+Ops+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/assets/stylesheets/landing.css">
   <link rel="stylesheet" href="../src/assets/stylesheets/instructions.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
   <section>
@@ -22,20 +27,21 @@
     </nav>
   </section>
 
-  <section class="instructions">
-    <div class="instructions-inner">
-      <div class="target">
-        <p>1. type of the letters on the fruits as they appear</p>
-        <div>---------------------------------------------------------------</div>
-        <p>2. if letter on bomb is typed the game ends and player loses</p>
-        <div>---------------------------------------------------------------</div>
-        <p>3. The points are accumulated for every time all the fruits are cleared,
-        but if any fruit is missed the point level resets to 1.</p>
-      </div>
-      
-      <div class="instruction-form-links">
-        <a href="index.html" class="play-game">Play Game</a>
-        <a href="./landing.html" class="home">Back to home</a>
+  <section class="landing">
+    <div class="landing-inner">
+      <img src="./explosion.png" alt="explosion">
+      <div class="my-form-instructions">
+        <div class="whatever">
+          <a href="index.html" class="play-game">Play Game</a>
+          <a href="./landing.html" class="home">Back to home</a>
+        </div>
+        <div class="my-form-instructions-para">
+          <div class="list-of-instructions">
+            1. Type the letters on the fruits in order to make the fruit disappear.
+            <br/><br/><hr><br/>
+            2. Avoid typing the letters on bombs. Typing the letter on a bomb will result in losing the game.
+          </div>
+        </div>
       </div>
     </div>
     
